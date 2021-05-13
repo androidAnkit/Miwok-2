@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tan_background"
+    tools:context=".MainActivity" >
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/white"
+        app:tabBackground="@color/primary_color"
+        app:tabTextColor="@color/tab_color"
+        app:tabSelectedTextColor="@color/white"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:id="@+id/tabLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+    </androidx.viewpager.widget.ViewPager>
+    
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/category_numbers">-->
+
+<!--<TextView-->
+<!--    android:id="@+id/numbers"-->
+<!--    style="@style/CategoryStyle"-->
+<!--    android:background="?android:attr/selectableItemBackground"-->
+<!--    android:text="Numbers" />-->
+
+<!--    </FrameLayout>-->
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/category_family">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/family"-->
+<!--        style="@style/CategoryStyle"-->
+<!--        android:background="?android:attr/selectableItemBackground"-->
+<!--        android:text="Family Members" />-->
+
+<!--    </FrameLayout>-->
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/category_colors">-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/colors"-->
+<!--        style="@style/CategoryStyle"-->
+<!--        android:background="?android:attr/selectableItemBackground"-->
+<!--        android:text="Colors" />-->
+
+<!--    </FrameLayout>-->
+
+
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/category_phrases">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/phrases"-->
+<!--        style="@style/CategoryStyle"-->
+<!--        android:text="Phrases" />-->
+
+<!--    </FrameLayout>-->
+
+
+
+</LinearLayout>

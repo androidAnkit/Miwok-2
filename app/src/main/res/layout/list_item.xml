@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:minHeight="88dp"
+    android:background="@color/tan_background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:src="@mipmap/ic_launcher" />
+
+<LinearLayout
+    android:id="@+id/text_container"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:paddingLeft="16dp"
+    android:layout_toRightOf="@+id/imageView"
+    android:orientation="vertical">
+
+        <TextView
+        android:id="@+id/miwok_words"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:text="lutti"
+            android:layout_weight="1"
+            android:gravity="bottom"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+            tools:ignore="Suspicious0dp" />
+
+    <TextView
+        android:id="@+id/english_words"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:text="one"
+        android:layout_weight="1"
+        android:layout_gravity="start"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        tools:ignore="Suspicious0dp" />
+</LinearLayout>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_baseline_play_arrow_24"></ImageView>
+
+    <View android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="?android:attr/selectableItemBackground"/>
+
+</RelativeLayout>
